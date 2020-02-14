@@ -210,6 +210,14 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
 
+  <script>
+    if (window.chrome)
+    $("[type=video\\\/mp4]").each(function()
+    {
+        $(this).attr('src', $(this).attr('src').replace(".mp4", "_c.mp4"));
+    });
+  </script>
+
   
   <script src="js/main.js"></script>
   
